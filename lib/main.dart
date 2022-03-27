@@ -34,6 +34,7 @@ class ShowSheet extends StatelessWidget {
             size: 40.0,
             color: Colors.green,
           ),
+          title: const Text('Más información'),
         )
       ],
     );
