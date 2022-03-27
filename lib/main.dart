@@ -50,10 +50,12 @@ class ShowSheet extends StatelessWidget {
 
     showModalBottomSheet(
         isScrollControlled: true,
+        shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.vertical(top: Radius.circular(32))),
         context: context,
         builder: (context) {
           return SizedBox(
-            height: 650.0,
+            height: 500.0,
             child: ListView.builder(
               itemCount: myList.length,
               itemBuilder: (_, i) => ListTile(
