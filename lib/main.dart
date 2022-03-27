@@ -47,5 +47,19 @@ class ShowSheet extends StatelessWidget {
 
   _mySheet(BuildContext context) {
     List myList = List.generate(50, (i) => i);
+
+    showModalBottomSheet(
+        context: context,
+        builder: (context) {
+          return SizedBox(
+            height: 350.0,
+            child: ListView.builder(
+              itemCount: myList.length,
+              itemBuilder: (_, i) => ListTile(
+                title: Text(myList[i].toString()),
+              ),
+            ),
+          );
+        });
   }
 }
