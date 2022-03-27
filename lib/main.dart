@@ -49,6 +49,7 @@ class ShowSheet extends StatelessWidget {
     List myList = List.generate(50, (i) => i);
 
     showModalBottomSheet(
+        barrierColor: Colors.black54,
         backgroundColor: Colors.blue,
         isDismissible: false, // Para bloquear el tap fuera
         isScrollControlled: true, // Colocar el tamaño
