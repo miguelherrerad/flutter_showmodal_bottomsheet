@@ -49,10 +49,11 @@ class ShowSheet extends StatelessWidget {
     List myList = List.generate(50, (i) => i);
 
     showModalBottomSheet(
+        isScrollControlled: true,
         context: context,
         builder: (context) {
           return SizedBox(
-            height: 350.0,
+            height: 650.0,
             child: ListView.builder(
               itemCount: myList.length,
               itemBuilder: (_, i) => ListTile(
