@@ -49,6 +49,7 @@ class ShowSheet extends StatelessWidget {
     List myList = List.generate(50, (i) => i);
 
     showModalBottomSheet(
+        isDismissible: false,
         isScrollControlled: true, // Colocar el tamaño
         shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.vertical(top: Radius.circular(32))),
