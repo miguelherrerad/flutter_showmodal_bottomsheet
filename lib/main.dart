@@ -15,9 +15,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Bottom Sheet'),
         ),
-        body: const Center(
-          child: Text('Hello World'),
-        ),
+        body: const ShowSheet(),
       ),
     );
   }
@@ -28,6 +26,16 @@ class ShowSheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return ListView(
+      children: [
+        ListTile(
+          leading: const Icon(
+            Icons.android_outlined,
+            size: 40.0,
+            color: Colors.green,
+          ),
+        )
+      ],
+    );
   }
 }
