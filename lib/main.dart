@@ -37,9 +37,13 @@ class ShowSheet extends StatelessWidget {
           title: const Text('Más información'),
           subtitle: const Text('Tap para ver más...'),
           trailing: const Icon(Icons.arrow_forward_ios),
-          onTap: () {},
+          onTap: () {
+            _mySheet(context);
+          },
         )
       ],
     );
   }
+
+  _mySheet(BuildContext context) {}
 }
