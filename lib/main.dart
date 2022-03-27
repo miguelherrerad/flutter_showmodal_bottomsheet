@@ -35,6 +35,7 @@ class ShowSheet extends StatelessWidget {
             color: Colors.green,
           ),
           title: const Text('Más información'),
+          subtitle: const Text('Tap para ver más...'),
         )
       ],
     );
